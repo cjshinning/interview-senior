@@ -1,0 +1,22 @@
+{
+  "name": "cj-rollup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rollup -c"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-external-helpers": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@types/babel__core": "^7.1.9",
+    "rollup": "^2.23.0",
+    "rollup-plugin-babel": "^4.4.0"
+  }
+}

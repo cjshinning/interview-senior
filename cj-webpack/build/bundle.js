@@ -90,35 +90,10 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _util1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./util1 */ \"./src/util1.js\");\n/* harmony import */ var _util2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./util2 */ \"./src/util2.js\");\n\n\nconsole.log(_util1__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\nObject(_util2__WEBPACK_IMPORTED_MODULE_1__[\"fn1\"])();\nObject(_util2__WEBPACK_IMPORTED_MODULE_1__[\"fn2\"])(); // [1, 2, 3].map(item => item + 1);\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/util1.js":
-/*!**********************!*\
-  !*** ./src/util1.js ***!
-  \**********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  a: 100\n});\n\n//# sourceURL=webpack:///./src/util1.js?");
-
-/***/ }),
-
-/***/ "./src/util2.js":
-/*!**********************!*\
-  !*** ./src/util2.js ***!
-  \**********************/
-/*! exports provided: fn1, fn2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"fn1\", function() { return fn1; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"fn2\", function() { return fn2; });\nfunction fn1() {\n  alert('fn1');\n}\nfunction fn2() {\n  alert('fn2');\n}\n\n//# sourceURL=webpack:///./src/util2.js?");
+eval("function MathHandler(x, y) {\n  this.x = x;\n  this.y = y;\n}\n\nMathHandler.prototype.add = function () {\n  return this.x + this.y;\n};\n\nvar m = new MathHandler(1, 2);\nconsole.log(m.add());\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
