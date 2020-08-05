@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("function MathHandler(x, y) {\n  this.x = x;\n  this.y = y;\n}\n\nMathHandler.prototype.add = function () {\n  return this.x + this.y;\n};\n\nvar m = new MathHandler(1, 2);\nconsole.log(m.add());\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("// class MathHandler {\n//     constructor(x, y){\n//         this.x = x;\n//         this.y = y;\n//     }\n//     add(){\n//         return this.x + this.y;\n//     }\n// }\n// var m = new MathHandler(1, 2);\n// console.log(m.add());\n// console.log(typeof MathHandler);    //function\n// console.log(MathHandler === MathHandler.prototype.constructor); //true\nclass Animal {\n  constructor(name) {\n    this.name = name;\n  }\n\n  eat() {\n    alert(this.name + ' eat');\n  }\n\n}\n\nclass Dog extends Animal {\n  constructor(name) {\n    super(name);\n    this.name = name;\n  }\n\n  say() {\n    alert(this.name + ' say');\n  }\n\n}\n\nconst dog = new Dog('哈士奇');\ndog.say();\ndog.eat();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

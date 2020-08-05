@@ -1,8 +1,39 @@
-import util1 from './util1';
-import {fn1, fn2} from './util2';
+// class MathHandler {
+//     constructor(x, y){
+//         this.x = x;
+//         this.y = y;
+//     }
+//     add(){
+//         return this.x + this.y;
+//     }
+// }
 
-console.log(util1);
-fn1();
-fn2();
+// var m = new MathHandler(1, 2);
+// console.log(m.add());
 
-// [1, 2, 3].map(item => item + 1);
+// console.log(typeof MathHandler);    //function
+// console.log(MathHandler === MathHandler.prototype.constructor); //true
+
+
+class Animal{
+    constructor(name){
+        this.name = name;
+    }
+    eat(){
+        alert(this.name + ' eat');
+    }
+}
+
+class Dog extends Animal {
+    constructor(name){
+        super(name);
+        this.name = name;
+    }
+    say(){
+        alert(this.name + ' say');
+    }
+}
+
+const dog = new Dog('哈士奇');
+dog.say();
+dog.eat();
